@@ -19,19 +19,22 @@ header{
   height: 100vh;
   // background: tomato;
   position: relative;
+  // z-index: -2;
 
   .trapezoid {
-	border-top: 1050px solid $baseColor;
+	border-top: 995px solid $baseColor;
 	border-left: 0 solid transparent;
 	border-right: 150px solid transparent;
 	// height:100vh;
-	width: 400px;
+	width: 450px;
+  position: absolute;
+  // z-index: -1;
   }
   .svgTitle{
     width: 100%;
     height: 100px;
     position: absolute;
-    top:380px;
+    top:350px;
     z-index: 3;
     figure{
       width: 100%;
@@ -49,11 +52,12 @@ header{
     border-radius: 20px;
     position: absolute;
     top: 50px;
-    left: 80px;
+    left: 100px;
     display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 3;
     ul{
       width: 100%;
       height: 100%;
@@ -86,24 +90,13 @@ header{
       }
     }
   }
-  // h1{
-  //   color: $textColor;
-  //   font-size: 130px;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   text-align: center;
-  //   line-height: 100vh;
-  // }
   .scroll{
     width: 280px;
     height: 80px;
     background: $mainColor;
     position: absolute;
-    top: 600px;
-    left: 150px;
+    top: 650px;
+    left: 250px;
     h2{
       color: #fefefe;
       font-size: 32px;
@@ -117,9 +110,79 @@ header{
     top: 20px;
     right: 0;
     .gear_image{
-
       position: absolute;
       top: 300px;
+      right: 0;
+    }
+  }
+}
+main{
+  width: 100%;
+}
+.myself{
+  width: 100%;
+  height: 600px;
+  background: #D2B7A0;
+  margin-top: 150px;
+  h2{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    color: $textColor;
+  }
+  .profile{
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    .profile_name{
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      figure{
+        width: 300px;
+        height: 300px;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      h2{
+        font-size: 35px;
+        color: $textColor;
+        span{
+          font-size: 18px;
+        }
+      }
+    }
+    .profile_text{
+      width: 65%;
+      height: 100%;
+      padding-top: 50px;
+      p{
+        font-size: 20px;
+        padding-bottom: 15px;
+        color: $textColor;
+      }
+      button{
+        margin-top: 70px;
+        width: 200px;
+        height: 60px;
+        color: #F7ECEC;
+        font-size: 25px;
+        background: $mainColor;
+        transition: ease-in-out .3s;
+        &:hover{
+          color: $accentColor;
+          letter-spacing: .6px;
+        }
+      }
     }
   }
 }

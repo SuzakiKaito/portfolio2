@@ -15,16 +15,17 @@ header {
   position: relative;
 }
 header .trapezoid {
-  border-top: 1050px solid #A65F37;
+  border-top: 995px solid #A65F37;
   border-left: 0 solid transparent;
   border-right: 150px solid transparent;
-  width: 400px;
+  width: 450px;
+  position: absolute;
 }
 header .svgTitle {
   width: 100%;
   height: 100px;
   position: absolute;
-  top: 380px;
+  top: 350px;
   z-index: 3;
 }
 header .svgTitle figure {
@@ -42,11 +43,12 @@ header .nav {
   border-radius: 20px;
   position: absolute;
   top: 50px;
-  left: 80px;
+  left: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  z-index: 3;
 }
 header .nav ul {
   width: 100%;
@@ -84,8 +86,8 @@ header .scroll {
   height: 80px;
   background: #59331D;
   position: absolute;
-  top: 600px;
-  left: 150px;
+  top: 650px;
+  left: 250px;
 }
 header .scroll h2 {
   color: #fefefe;
@@ -102,4 +104,77 @@ header .header_images {
 header .header_images .gear_image {
   position: absolute;
   top: 300px;
+  right: 0;
+}
+
+main {
+  width: 100%;
+}
+
+.myself {
+  width: 100%;
+  height: 600px;
+  background: #D2B7A0;
+  margin-top: 150px;
+}
+.myself h2 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #2c2c2c;
+}
+.myself .profile {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.myself .profile .profile_name {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.myself .profile .profile_name figure {
+  width: 300px;
+  height: 300px;
+}
+.myself .profile .profile_name figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.myself .profile .profile_name h2 {
+  font-size: 35px;
+  color: #2c2c2c;
+}
+.myself .profile .profile_name h2 span {
+  font-size: 18px;
+}
+.myself .profile .profile_text {
+  width: 65%;
+  height: 100%;
+  padding-top: 50px;
+}
+.myself .profile .profile_text p {
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: #2c2c2c;
+}
+.myself .profile .profile_text button {
+  margin-top: 70px;
+  width: 200px;
+  height: 60px;
+  color: #F7ECEC;
+  font-size: 25px;
+  background: #59331D;
+  transition: ease-in-out 0.3s;
+}
+.myself .profile .profile_text button:hover {
+  color: #F23827;
+  letter-spacing: 0.6px;
 }
