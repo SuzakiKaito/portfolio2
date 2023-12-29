@@ -181,9 +181,8 @@ main {
 
 .future {
   width: 100%;
-  height: 600px;
+  height: 500px;
   position: relative;
-  overflow-x: hidden;
 }
 .future h2 {
   width: 100%;
@@ -211,10 +210,68 @@ main {
   position: absolute;
   top: -150px;
   left: -280px;
+  z-index: -1;
 }
 .future .gear_normal {
+  width: 400px;
+  height: 400px;
+  z-index: -1;
   transform: scale(100px);
   position: absolute;
   bottom: -50px;
-  right: -100px;
+  right: 20px;
+}
+
+.work {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  border: 3px solid skyblue;
+  margin-top: 40px;
+}
+.work h2 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #2c2c2c;
+}
+.work .slider_wrap {
+  width: 1100px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work .slider_wrap .work_slider {
+  display: flex;
+  column-gap: 3%;
+  margin-top: 30px;
+  transition: transform ease-in-out 0.5s;
+}
+.work .slider_wrap .work_slider a {
+  width: 1100px;
+  height: auto;
+  height: auto;
+}
+.work .slider_wrap .work_slider img {
+  width: 100%;
+  height: auto;
+}
+.work .work_page {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto 0;
+}
+.work .work_page a {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background: #59331D;
+  border-radius: 50%;
+  transition: ease-in-out 0.3s;
 }
