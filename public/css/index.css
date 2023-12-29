@@ -11,11 +11,12 @@ body {
 header {
   background: #F2D399;
   width: 100%;
-  height: 100vh;
+  height: 998px;
   position: relative;
+  overflow: hidden;
 }
 header .trapezoid {
-  border-top: 995px solid #A65F37;
+  border-top: 998px solid #A65F37;
   border-left: 0 solid transparent;
   border-right: 150px solid transparent;
   width: 450px;
@@ -82,7 +83,7 @@ header .nav ul li :hover {
   letter-spacing: 1px;
 }
 header .scroll {
-  width: 280px;
+  width: 260px;
   height: 80px;
   background: #59331D;
   position: absolute;
@@ -91,7 +92,7 @@ header .scroll {
 }
 header .scroll h2 {
   color: #fefefe;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   line-height: 80px;
 }
@@ -99,12 +100,12 @@ header .header_images {
   position: relative;
   position: absolute;
   top: 20px;
-  right: 0;
+  right: -70px;
 }
 header .header_images .gear_image {
   position: absolute;
   top: 300px;
-  right: 0;
+  right: -180px;
 }
 
 main {
@@ -115,7 +116,6 @@ main {
   width: 100%;
   height: 600px;
   background: #D2B7A0;
-  margin-top: 150px;
 }
 .myself h2 {
   width: 100%;
@@ -170,11 +170,51 @@ main {
   width: 200px;
   height: 60px;
   color: #F7ECEC;
-  font-size: 25px;
+  font-size: 24px;
   background: #59331D;
   transition: ease-in-out 0.3s;
 }
 .myself .profile .profile_text button:hover {
   color: #F23827;
   letter-spacing: 0.6px;
+}
+
+.future {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow-x: hidden;
+}
+.future h2 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #2c2c2c;
+}
+.future .future_text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.future .future_text h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #2c2c2c;
+}
+.future .future_text h1 span {
+  color: #F23827;
+}
+.future .gear_big {
+  position: absolute;
+  top: -150px;
+  left: -280px;
+}
+.future .gear_normal {
+  transform: scale(100px);
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
 }

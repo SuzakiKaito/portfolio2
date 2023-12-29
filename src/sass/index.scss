@@ -10,19 +10,21 @@ html{
 body{
   background:$bgColor;
   width: 100%;
-  height: auto;
+  height:auto;
+  // overflow: hidden;
 }
 
 header{
   background: $bgColor;
   width: 100%;
-  height: 100vh;
+  height: 998px;
   // background: tomato;
   position: relative;
   // z-index: -2;
+  overflow: hidden;
 
   .trapezoid {
-	border-top: 995px solid $baseColor;
+	border-top: 998px solid $baseColor;
 	border-left: 0 solid transparent;
 	border-right: 150px solid transparent;
 	// height:100vh;
@@ -91,7 +93,7 @@ header{
     }
   }
   .scroll{
-    width: 280px;
+    width: 260px;
     height: 80px;
     background: $mainColor;
     position: absolute;
@@ -99,7 +101,7 @@ header{
     left: 250px;
     h2{
       color: #fefefe;
-      font-size: 32px;
+      font-size: 24px;
       text-align: center;
       line-height: 80px;
     }
@@ -108,11 +110,11 @@ header{
     position: relative;
     position: absolute;
     top: 20px;
-    right: 0;
+    right: -70px;
     .gear_image{
       position: absolute;
       top: 300px;
-      right: 0;
+      right: -180px;
     }
   }
 }
@@ -123,7 +125,7 @@ main{
   width: 100%;
   height: 600px;
   background: #D2B7A0;
-  margin-top: 150px;
+  // margin-top: 150px;
   h2{
     width: 100%;
     font-size: 40px;
@@ -175,7 +177,7 @@ main{
         width: 200px;
         height: 60px;
         color: #F7ECEC;
-        font-size: 25px;
+        font-size: 24px;
         background: $mainColor;
         transition: ease-in-out .3s;
         &:hover{
@@ -184,5 +186,44 @@ main{
         }
       }
     }
+  }
+}
+.future{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow-x: hidden;
+  h2{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    color: $textColor;
+  }
+  .future_text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+      font-size: 48px;
+      text-align: center;
+      color: $textColor;
+      span{
+        color: #F23827;
+      }
+    }
+  }
+  .gear_big{
+    position: absolute;
+    top: -150px;
+    left: -280px;
+  }
+  .gear_normal{
+    transform: scale(100px);
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
   }
 }
