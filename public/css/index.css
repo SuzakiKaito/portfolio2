@@ -149,6 +149,7 @@ main {
   border-radius: 50%;
 }
 .myself .profile .profile_name h2 {
+  @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Inika&family=Lalezar&family=Merriweather:wght@300&display=swap");
   font-size: 35px;
   color: #2c2c2c;
 }
@@ -307,4 +308,13 @@ main {
   text-align: center;
   padding-top: 30px;
   color: #2c2c2c;
+}
+.private .slider_wrap {
+  width: 1200px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
