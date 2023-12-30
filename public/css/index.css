@@ -226,7 +226,6 @@ main {
   width: 100%;
   height: 900px;
   position: relative;
-  border: 3px solid skyblue;
   margin-top: 40px;
 }
 .work h2 {
@@ -237,7 +236,7 @@ main {
   color: #2c2c2c;
 }
 .work .slider_wrap {
-  width: 1100px;
+  width: 1200px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -252,7 +251,7 @@ main {
   transition: transform ease-in-out 0.5s;
 }
 .work .slider_wrap .work_slider a {
-  width: 1100px;
+  width: 1200px;
   height: auto;
   height: auto;
 }
@@ -274,4 +273,38 @@ main {
   background: #59331D;
   border-radius: 50%;
   transition: ease-in-out 0.3s;
+}
+.work .work_page .focus {
+  width: 20px;
+  height: 20px;
+  background: #F23827;
+}
+.work button {
+  margin-top: 70px;
+  width: 250px;
+  height: 70px;
+  color: #F7ECEC;
+  font-size: 32px;
+  background: #59331D;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  transition: ease-in-out 0.3s;
+}
+.work button:hover {
+  color: #F23827;
+  letter-spacing: 0.6px;
+}
+
+.private {
+  width: 100%;
+  height: 900px;
+  position: relative;
+}
+.private h2 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #2c2c2c;
 }
