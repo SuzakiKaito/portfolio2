@@ -251,7 +251,7 @@ main{
     color: $textColor;
   }
   .slider_wrap{
-    width: 1200px;
+    width: 1240px;
     overflow:hidden;
   margin-left:auto;
   margin-right:auto;
@@ -325,13 +325,49 @@ main{
     padding-top: 30px;
     color: $textColor;
   }
-  .slider_wrap{
-  width: 1200px;
+  .slide_wrap{
+  width: 1240px;
   overflow:hidden;
   margin-left:auto;
   margin-right:auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  .private_slider{
+    display: flex;
+    column-gap:3%;
+    margin-top: 30px;
+    transition:transform ease-in-out .5s;
+    a{
+        width: 1200px;
+        height: auto;
+        // height: 500px;
+        height:auto;
+      }
+    img{
+        width: 100%;
+        height:auto;
+      }
+    }
+  }
+  .private_page{
+    width: 20%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin: 0 auto 0;
+    a{
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      background: #59331D;
+      border-radius: 50%;
+      transition: ease-in-out .3s;
+    }
+    .focus{
+      width: 20px;
+      height: 20px;
+      background: $accentColor;
+    }
   }
 }
