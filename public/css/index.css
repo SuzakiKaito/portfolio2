@@ -167,7 +167,7 @@ main {
   color: #2c2c2c;
 }
 .myself .profile .profile_text button {
-  margin-top: 70px;
+  margin-top: 30px;
   width: 200px;
   height: 60px;
   color: #F7ECEC;
@@ -352,4 +352,35 @@ main {
   width: 20px;
   height: 20px;
   background: #F23827;
+}
+
+.skill {
+  width: 100%;
+  height: 500px;
+}
+.skill h2 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #2c2c2c;
+}
+.skill .skill_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill .skill_content .skill_value figure {
+  width: 200px;
+}
+.skill .skill_content .skill_value figure img {
+  width: 100%;
+  height: 100%;
+}
+.skill .skill_content .skill_value .icon {
+  width: 150px;
+}
+.skill .skill_content .skill_value .icon img {
+  width: 100%;
 }
