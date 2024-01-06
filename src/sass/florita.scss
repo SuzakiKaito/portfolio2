@@ -1,0 +1,39 @@
+$bgColor:#F2D399;
+$mainColor:#59331D;
+$textColor:#2c2c2c;
+$baseColor:#A65F37;
+$accentColor:#F23827;
+
+html{
+  font-size: 62.5%;
+}
+body{
+  background: $bgColor;
+  width: 100%;
+  height: 100vh;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: $textColor;
+  margin:20px auto 0;
+}
+.florita_content{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .florita_image{
+    width: 45%;
+    figure{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .florita_text{
+    width: 45%;
+  }
+}

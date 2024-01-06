@@ -241,9 +241,6 @@ main{
 .work{
   width: 100%;
   height: 900px;
-  position: relative;
-  // border: 3px solid skyblue;
-  margin-top: 40px;
   h2{
     width: 100%;
     font-size: 40px;
@@ -251,127 +248,169 @@ main{
     padding-top: 30px;
     color: $textColor;
   }
-  .slider_wrap{
-    width: 1240px;
-    overflow:hidden;
-  margin-left:auto;
-  margin-right:auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .work_slider{
-    display: flex;
-    column-gap:3%;
-    margin-top: 30px;
-    transition:transform ease-in-out .5s;
-    a{
-        width: 1200px;
-        height: auto;
-        // height: 500px;
-        height:auto;
-      }
-    img{
-        width: 100%;
-        height:auto;
-      }
-    }
-  }
-  .work_page{
-    width: 20%;
-    display: flex;
-    justify-content:space-around ;
-    align-items: center;
-    margin: 50px auto 0;
-    a{
-      cursor: pointer;
-      width: 15px;
-      height: 15px;
-      background: #59331D;
-      border-radius: 50%;
-      transition: ease-in-out .3s;
-    }
-    .focus{
-      width: 20px;
-      height: 20px;
-      background: $accentColor;
-    }
-  }
-  button{
-    margin-top: 70px;
-    width: 250px;
-    height: 70px;
-    color: #F7ECEC;
-    font-size: 32px;
-    background: $mainColor;
-    position: absolute;
-    right: 100px;
-    bottom: 50px;
-    transition: ease-in-out .3s;
-    &:hover{
-      color: $accentColor;
-      letter-spacing: .6px;
-    }
-  }
-}
-.private{
-  width: 100%;
-  height: 900px;
-  position: relative;
-  // border: 3px solid skyblue;
-  // margin-top: 40px;
-  h2{
+  .work_content{
     width: 100%;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 30px;
-    color: $textColor;
-  }
-  .slide_wrap{
-  width: 1240px;
-  overflow:hidden;
-  margin-left:auto;
-  margin-right:auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .private_slider{
     display: flex;
-    column-gap:3%;
-    margin-top: 30px;
-    transition:transform ease-in-out .5s;
-    a{
-        width: 1200px;
-        height: auto;
-        // height: 500px;
-        height:auto;
-      }
-    img{
-        width: 100%;
-        height:auto;
-      }
-    }
-  }
-  .private_page{
-    width: 20%;
-    display: flex;
-    justify-content:space-around ;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto 0;
-    a{
-      cursor: pointer;
-      width: 15px;
-      height: 15px;
-      background: #59331D;
-      border-radius: 50%;
-      transition: ease-in-out .3s;
+    .work_image{
+      width: 15%;
+      figure{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
     }
-    .focus{
-      width: 20px;
-      height: 20px;
-      background: $accentColor;
+    .work_infomation{
+      width: 45%;
     }
   }
 }
+// .work{
+//   width: 100%;
+//   height: 900px;
+//   position: relative;
+//   // border: 3px solid skyblue;
+//   margin-top: 40px;
+//   h2{
+//     width: 100%;
+//     font-size: 40px;
+//     text-align: center;
+//     padding-top: 30px;
+//     color: $textColor;
+//   }
+//   .slider_wrap{
+//     width: 1240px;
+//     overflow:hidden;
+//     margin-left:auto;
+//     margin-right:auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .work_slider{
+//       display: flex;
+//       column-gap:3%;
+//       margin-top: 30px;
+//       transition:transform ease-in-out .5s;
+//       a{
+//         width: 1200px;
+//         height: auto;
+//         // height: 500px;
+//         height:auto;
+//         position: relative;
+//         img{
+//           width: 100%;
+//           height:auto;
+//         }
+//         // .florita_info{
+//         //   position: absolute;
+//         //   top: 0;
+//         //   left: 0;
+//         //   width: 100%;
+//         //   height: auto;
+//         //   background: $textColor;
+//         //   opacity: .5;
+//         // }
+//       }
+//     }
+//   }
+//   .work_page{
+//     width: 20%;
+//     display: flex;
+//     justify-content:space-around ;
+//     align-items: center;
+//     margin: 50px auto 0;
+//     a{
+//       cursor: pointer;
+//       width: 15px;
+//       height: 15px;
+//       background: #59331D;
+//       border-radius: 50%;
+//       transition: ease-in-out .3s;
+//     }
+//     .focus{
+//       width: 20px;
+//       height: 20px;
+//       background: $accentColor;
+//     }
+//   }
+//   button{
+//     margin-top: 70px;
+//     width: 250px;
+//     height: 70px;
+//     color: #F7ECEC;
+//     font-size: 32px;
+//     background: $mainColor;
+//     position: absolute;
+//     right: 100px;
+//     bottom: 50px;
+//     transition: ease-in-out .3s;
+//     &:hover{
+//       color: $accentColor;
+//       letter-spacing: .6px;
+//     }
+//   }
+// }
+// .private{
+//   width: 100%;
+//   height: 900px;
+//   position: relative;
+//   // border: 3px solid skyblue;
+//   // margin-top: 40px;
+//   h2{
+//     width: 100%;
+//     font-size: 40px;
+//     text-align: center;
+//     padding-top: 30px;
+//     color: $textColor;
+//   }
+//   .slide_wrap{
+//   width: 1240px;
+//   overflow:hidden;
+//   margin-left:auto;
+//   margin-right:auto;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   .private_slider{
+//     display: flex;
+//     column-gap:3%;
+//     margin-top: 30px;
+//     transition:transform ease-in-out .5s;
+//     a{
+//         width: 1200px;
+//         height: auto;
+//         // height: 500px;
+//         height:auto;
+//       }
+//     img{
+//         width: 100%;
+//         height:auto;
+//       }
+//     }
+//   }
+//   .private_page{
+//     width: 20%;
+//     display: flex;
+//     justify-content:space-around ;
+//     align-items: center;
+//     margin: 0 auto 0;
+//     a{
+//       cursor: pointer;
+//       width: 15px;
+//       height: 15px;
+//       background: #59331D;
+//       border-radius: 50%;
+//       transition: ease-in-out .3s;
+//     }
+//     .focus{
+//       width: 20px;
+//       height: 20px;
+//       background: $accentColor;
+//     }
+//   }
+// }
 .skill{
   width: 100%;
   height: 500px;
@@ -385,6 +424,7 @@ main{
   }
   .skill_content{
     width: 100%;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

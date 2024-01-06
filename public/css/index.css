@@ -226,8 +226,6 @@ main {
 .work {
   width: 100%;
   height: 900px;
-  position: relative;
-  margin-top: 40px;
 }
 .work h2 {
   width: 100%;
@@ -236,122 +234,23 @@ main {
   padding-top: 30px;
   color: #2c2c2c;
 }
-.work .slider_wrap {
-  width: 1240px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+.work .work_content {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.work .slider_wrap .work_slider {
-  display: flex;
-  column-gap: 3%;
-  margin-top: 30px;
-  transition: transform ease-in-out 0.5s;
+.work .work_content .work_image {
+  width: 15%;
 }
-.work .slider_wrap .work_slider a {
-  width: 1200px;
-  height: auto;
-  height: auto;
-}
-.work .slider_wrap .work_slider img {
+.work .work_content .work_image figure {
   width: 100%;
-  height: auto;
 }
-.work .work_page {
-  width: 20%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 50px auto 0;
-}
-.work .work_page a {
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-  background: #59331D;
-  border-radius: 50%;
-  transition: ease-in-out 0.3s;
-}
-.work .work_page .focus {
-  width: 20px;
-  height: 20px;
-  background: #F23827;
-}
-.work button {
-  margin-top: 70px;
-  width: 250px;
-  height: 70px;
-  color: #F7ECEC;
-  font-size: 32px;
-  background: #59331D;
-  position: absolute;
-  right: 100px;
-  bottom: 50px;
-  transition: ease-in-out 0.3s;
-}
-.work button:hover {
-  color: #F23827;
-  letter-spacing: 0.6px;
-}
-
-.private {
+.work .work_content .work_image figure img {
   width: 100%;
-  height: 900px;
-  position: relative;
 }
-.private h2 {
-  width: 100%;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 30px;
-  color: #2c2c2c;
-}
-.private .slide_wrap {
-  width: 1240px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.private .slide_wrap .private_slider {
-  display: flex;
-  column-gap: 3%;
-  margin-top: 30px;
-  transition: transform ease-in-out 0.5s;
-}
-.private .slide_wrap .private_slider a {
-  width: 1200px;
-  height: auto;
-  height: auto;
-}
-.private .slide_wrap .private_slider img {
-  width: 100%;
-  height: auto;
-}
-.private .private_page {
-  width: 20%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto 0;
-}
-.private .private_page a {
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-  background: #59331D;
-  border-radius: 50%;
-  transition: ease-in-out 0.3s;
-}
-.private .private_page .focus {
-  width: 20px;
-  height: 20px;
-  background: #F23827;
+.work .work_content .work_infomation {
+  width: 45%;
 }
 
 .skill {
@@ -367,6 +266,7 @@ main {
 }
 .skill .skill_content {
   width: 100%;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
