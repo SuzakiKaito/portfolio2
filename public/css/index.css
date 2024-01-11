@@ -102,12 +102,34 @@ header .header_images {
   top: 20px;
   right: -70px;
 }
+header .header_images .gear_normal img {
+  animation: 3s linear infinite rotation1;
+}
 header .header_images .gear_image {
   position: absolute;
   top: 300px;
   right: -180px;
 }
+header .header_images .gear_image img {
+  animation: 4.4s linear infinite rotation2;
+}
 
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 main {
   width: 100%;
 }
@@ -236,6 +258,7 @@ main {
 }
 .work .work_content {
   width: 100%;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,6 +274,7 @@ main {
 }
 .work .work_content .work_infomation {
   width: 45%;
+  border: #F23827 1px solid;
 }
 
 .skill {
