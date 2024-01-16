@@ -113,6 +113,7 @@ header{
   .header_images{
     position: relative;
     position: absolute;
+    // overflow: hidden;
     top: 20px;
     right: -70px;
     .gear_normal{
@@ -123,9 +124,9 @@ header{
     .gear_image{
       position: absolute;
       top: 300px;
-      right: -180px;
+      right: -10px;
       img{
-        animation:4.4s linear infinite rotation2;
+        animation:3s linear infinite rotation2;
       }
     }
   }
@@ -190,7 +191,7 @@ main{
       padding-top: 50px;
       p{
         font-size: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 25px;
         color: $textColor;
       }
       button{
@@ -211,7 +212,7 @@ main{
 }
 .future{
   width: 100%;
-  height: 500px;
+  height: 700px;
   position: relative;
   // overflow: hidden;
   h2{
@@ -250,7 +251,7 @@ main{
     transform: scale(100px);
     position: absolute;
     bottom: -50px;
-    right: 20px;
+    right: 50px;
   }
 }
 .work{
@@ -263,15 +264,15 @@ main{
     padding-top: 30px;
     color: $textColor;
   }
-  .work_content{
+  .florita_content{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    .work_image{
+    .florita_image{
       width: 15%;
-
+      transform: rotate(-10deg);
       figure{
         width: 100%;
         img{
@@ -279,9 +280,107 @@ main{
         }
       }
     }
-    .work_infomation{
-      width: 45%;
-      border: #F23827 1px solid;
+    .florita_infomation{
+      width: 30%;
+      display: flex;
+      flex-flow: column;
+      // border: #F23827 1px solid;
+      p,h3{
+        text-align: right;
+      }
+      p{
+        font-size: 2rem;
+        span{
+          color: $accentColor;
+        }
+      }
+      h3{
+        font-size: 9.6rem;
+      }
+      .florita_infomation_flex{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row;
+        // border: #A65F37 1px solid;
+        .florita_infomation_box{
+          width: 120px;
+          height: 80px;
+          margin:10px 5px 0;
+          background: $mainColor;
+          p,h4{
+            color: #eee;
+            text-align: center;
+            line-height: 35px;
+          }
+          p{
+            font-size: 12px;
+          }
+          h4{
+            font-size: 16px;
+          }
+        }
+      }
+      .florita_infomation_ture{
+        // width: 100%;
+        // display: flex;
+        // justify-content: flex-end;
+        // flex-flow: column;
+        .florita_ture_title{
+          width: 140px;
+          height: 30px;
+          background: $mainColor;
+          margin: 20px 5px 0 auto;
+          // margin-left: auto;
+          // margin-top: 20px;
+          p{
+            color: #eee;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 30px;
+          }
+        }
+        .florita_ture_box{
+          width: 380px;
+          height: 60px;
+          background: $mainColor;
+          // text-align: right;
+          margin: 0 5px 20px auto;
+          p{
+            color: #eee;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 60px;
+          }
+        }
+      }
+      .florita_btn{
+        width: 120px;
+        height: 50px;
+        // background: $mainColor;
+        text-decoration: double;
+        border-bottom: $mainColor 1px solid;
+        font-size: 1.6rem;
+        margin: 0 5px 0 auto;
+        transition: ease-in-out .3s;
+        a{
+          color: $mainColor;
+          text-decoration: none;
+          transition: ease-in-out .3s;
+          &:hover{
+            letter-spacing:.8px;
+            color: $accentColor;
+          }
+        }
+      }
+      // figure{
+      //   margin-top: 20px;
+      //   width: 360px;
+      //   height: 90px;
+      //   img{
+      //     width: 100%;
+      //   }
+      // }
     }
   }
 }

@@ -108,10 +108,10 @@ header .header_images .gear_normal img {
 header .header_images .gear_image {
   position: absolute;
   top: 300px;
-  right: -180px;
+  right: -10px;
 }
 header .header_images .gear_image img {
-  animation: 4.4s linear infinite rotation2;
+  animation: 3s linear infinite rotation2;
 }
 
 @keyframes rotation1 {
@@ -185,7 +185,7 @@ main {
 }
 .myself .profile .profile_text p {
   font-size: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   color: #2c2c2c;
 }
 .myself .profile .profile_text button {
@@ -204,7 +204,7 @@ main {
 
 .future {
   width: 100%;
-  height: 500px;
+  height: 700px;
   position: relative;
 }
 .future h2 {
@@ -242,7 +242,7 @@ main {
   transform: scale(100px);
   position: absolute;
   bottom: -50px;
-  right: 20px;
+  right: 50px;
 }
 
 .work {
@@ -256,25 +256,105 @@ main {
   padding-top: 30px;
   color: #2c2c2c;
 }
-.work .work_content {
+.work .florita_content {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.work .work_content .work_image {
+.work .florita_content .florita_image {
   width: 15%;
+  transform: rotate(-10deg);
 }
-.work .work_content .work_image figure {
+.work .florita_content .florita_image figure {
   width: 100%;
 }
-.work .work_content .work_image figure img {
+.work .florita_content .florita_image figure img {
   width: 100%;
 }
-.work .work_content .work_infomation {
-  width: 45%;
-  border: #F23827 1px solid;
+.work .florita_content .florita_infomation {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+}
+.work .florita_content .florita_infomation p, .work .florita_content .florita_infomation h3 {
+  text-align: right;
+}
+.work .florita_content .florita_infomation p {
+  font-size: 2rem;
+}
+.work .florita_content .florita_infomation p span {
+  color: #F23827;
+}
+.work .florita_content .florita_infomation h3 {
+  font-size: 9.6rem;
+}
+.work .florita_content .florita_infomation .florita_infomation_flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row;
+}
+.work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box {
+  width: 120px;
+  height: 80px;
+  margin: 10px 5px 0;
+  background: #59331D;
+}
+.work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box p, .work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box h4 {
+  color: #eee;
+  text-align: center;
+  line-height: 35px;
+}
+.work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box p {
+  font-size: 12px;
+}
+.work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box h4 {
+  font-size: 16px;
+}
+.work .florita_content .florita_infomation .florita_infomation_ture .florita_ture_title {
+  width: 140px;
+  height: 30px;
+  background: #59331D;
+  margin: 20px 5px 0 auto;
+}
+.work .florita_content .florita_infomation .florita_infomation_ture .florita_ture_title p {
+  color: #eee;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 30px;
+}
+.work .florita_content .florita_infomation .florita_infomation_ture .florita_ture_box {
+  width: 380px;
+  height: 60px;
+  background: #59331D;
+  margin: 0 5px 20px auto;
+}
+.work .florita_content .florita_infomation .florita_infomation_ture .florita_ture_box p {
+  color: #eee;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 60px;
+}
+.work .florita_content .florita_infomation .florita_btn {
+  width: 120px;
+  height: 50px;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  border-bottom: #59331D 1px solid;
+  font-size: 1.6rem;
+  margin: 0 5px 0 auto;
+  transition: ease-in-out 0.3s;
+}
+.work .florita_content .florita_infomation .florita_btn a {
+  color: #59331D;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+.work .florita_content .florita_infomation .florita_btn a:hover {
+  letter-spacing: 0.8px;
+  color: #F23827;
 }
 
 .skill {
