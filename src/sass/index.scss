@@ -15,7 +15,24 @@ body{
   height:auto;
   
 }
-
+.mouse-stalker{
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #2c2c2c;
+  opacity: .8;
+  border-radius: 50%;
+  transform: translate(0,0);
+  transition: transform 0.4s;
+  transition-timing-function: ease-out;
+  z-index: 999;
+  &.mouse-hover{
+    top: -30px;
+    transition: 0.2s;
+    width: 30px;
+    height: 30px;
+  }
+}
 header{
   background: $bgColor;
   width: 100%;
@@ -50,7 +67,7 @@ header{
     }
   }
   .nav{
-    width: 480px;
+    width: 600px;
     height: 80px;
     background:$mainColor;
     border-radius: 20px;
@@ -71,7 +88,7 @@ header{
       li{
         background: $bgColor;
         border-radius: 20px;
-        width: 100px;
+        width: 110px;
       height: 60px;
         list-style: none;
         a{
@@ -256,7 +273,7 @@ main{
 }
 .work{
   width: 100%;
-  height: 900px;
+  height: 800px;
   h2{
     width: 100%;
     font-size: 40px;
@@ -266,7 +283,7 @@ main{
   }
   .florita_content{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;

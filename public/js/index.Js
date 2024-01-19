@@ -1,3 +1,15 @@
+const mouseStalker = document.querySelector(".mouse-stalker") 
+const scrollContent = document.querySelector(".scroll")
+console.log(mouseStalker,scrollContent);
+
+document.addEventListener('mousemove',function(event){
+  mouseStalker.style.transform = 'translate('+ event.clientX+'px,'+ event.clientY +'px)'
+})
+
+scrollContent.addEventListener("mouseover",()=>{
+  scrollContent.classList.add= "mouse-hover";
+  console.log("hover");
+})
 // const slider = document.querySelector(".work_slider");
 // // const slides = document.querySelectorAll('.work_slider img');
 // // const slideWidth = slides[0].clientWidth;
