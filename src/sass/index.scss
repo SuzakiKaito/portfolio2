@@ -19,20 +19,21 @@ body{
   position: fixed;
   width: 10px;
   height: 10px;
-  background: #2c2c2c;
+  background:$accentColor;
   opacity: .8;
   border-radius: 50%;
   transform: translate(0,0);
-  transition: transform 0.4s;
+  transition: transform 0.1s;
   transition-timing-function: ease-out;
   z-index: 999;
-  &.mouse-hover{
-    top: -30px;
-    transition: 0.2s;
-    width: 30px;
-    height: 30px;
-  }
 }
+.mouse-hover{
+  top: -30px;
+  transition: 0.2s;
+  width: 30px;
+  height: 30px;
+}
+
 header{
   background: $bgColor;
   width: 100%;
@@ -67,7 +68,7 @@ header{
     }
   }
   .nav{
-    width: 600px;
+    width: 480px;
     height: 80px;
     background:$mainColor;
     border-radius: 20px;
@@ -88,8 +89,8 @@ header{
       li{
         background: $bgColor;
         border-radius: 20px;
-        width: 110px;
-      height: 60px;
+        width: 100px;
+        height: 60px;
         list-style: none;
         a{
           width: 100%;
@@ -99,7 +100,7 @@ header{
           text-decoration: none;
           text-align: center;
           line-height: 60px;
-          font-size: 2.4rem;
+          font-size: 1.8rem;
           font-weight: bold;
           transition: ease-in-out .3s;
           letter-spacing: .5px;
@@ -273,7 +274,7 @@ main{
 }
 .work{
   width: 100%;
-  height: 800px;
+  height: 1400px;
   h2{
     width: 100%;
     font-size: 40px;
@@ -363,7 +364,7 @@ main{
           background: $mainColor;
           // text-align: right;
           margin: 0 5px 20px auto;
-          p{
+          h4{
             color: #eee;
             font-size: 1.5rem;
             text-align: center;
@@ -390,14 +391,113 @@ main{
           }
         }
       }
-      // figure{
-      //   margin-top: 20px;
-      //   width: 360px;
-      //   height: 90px;
-      //   img{
-      //     width: 100%;
-      //   }
-      // }
+    }
+  }
+  .seek_content{
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .seek_image{
+      width: 15%;
+      transform: rotate(-10deg) scale(1.2);
+      figure{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .seek_infomation{
+      width: 30%;
+      display: flex;
+      flex-flow: column;
+      // border: #F23827 1px solid;
+      p,h3{
+        text-align: right;
+      }
+      p{
+        font-size: 2rem;
+        span{
+          color: $accentColor;
+        }
+      }
+      h3{
+        font-size: 9.6rem;
+      }
+      .seek_infomation_flex{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row;
+        // border: #A65F37 1px solid;
+        .seek_infomation_box{
+          width: 120px;
+          height: 80px;
+          margin:10px 5px 0;
+          background: $mainColor;
+          p,h4{
+            color: #eee;
+            text-align: center;
+            line-height: 35px;
+          }
+          p{
+            font-size: 12px;
+          }
+          h4{
+            font-size: 16px;
+          }
+        }
+      }
+      .seek_infomation_ture{
+        .seek_ture_title{
+          width: 140px;
+          height: 30px;
+          background: $mainColor;
+          margin: 20px 5px 0 auto;
+          // margin-left: auto;
+          // margin-top: 20px;
+          p{
+            color: #eee;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 30px;
+          }
+        }
+        .seek_ture_box{
+          width: 380px;
+          height: 60px;
+          background: $mainColor;
+          // text-align: right;
+          margin: 0 5px 20px auto;
+          h4{
+            color: #eee;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 60px;
+          }
+        }
+      }
+      .seek_btn{
+        width: 120px;
+        height: 50px;
+        // background: $mainColor;
+        text-decoration: double;
+        border-bottom: $mainColor 1px solid;
+        font-size: 1.6rem;
+        margin: 0 5px 0 auto;
+        transition: ease-in-out .3s;
+        a{
+          color: $mainColor;
+          text-decoration: none;
+          transition: ease-in-out .3s;
+          &:hover{
+            letter-spacing:.8px;
+            color: $accentColor;
+          }
+        }
+      }
     }
   }
 }
