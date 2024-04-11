@@ -272,7 +272,7 @@ main{
   width: 100%;
   height: 700px;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
   h2{
     width: 100%;
     font-size: 40px;
@@ -311,8 +311,8 @@ main{
     // overflow: hidden;
     transform: scale(100px);
     position: absolute;
-    bottom: -50px;
-    right: 50px;
+    bottom: 10px;
+    right: -120px;
     img{
       animation:12s linear infinite rotation3;
     }
@@ -695,7 +695,7 @@ main{
 // }
 .contact{
   width: 100%;
-  height: 300px;
+  height: 200px;
   margin-top: 250px;
   // background: tomato;
   h2{
@@ -705,32 +705,20 @@ main{
     padding-top: 30px;
     color: $textColor;
   }
-  .skill_flex{
+  .contact_flex{
     width: 100%;
+    height:  200px;
     display: flex;
-    justify-content:space-around;
-    .skill_content{
-      width: 50%;
-      margin-top: 50px;
+    justify-content:center;
+    align-items: center;
+    .contact_iconImage{
+      width: 25%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .skill_value{
-        figure{
-          width: 100px;
-          // height: 100px;
-          img{
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .icon{
-          width: 80px;
-          // height: 150px;
-          img{
-            width: 100%;
-          }
+      justify-content: space-around;
+      figure{
+        width: 50px;
+        img{
+          width: 100%;
         }
       }
     }
