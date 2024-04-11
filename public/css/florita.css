@@ -8,6 +8,19 @@ body {
   height: 200vh;
 }
 
+.mouse-stalker {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #d1b3aa;
+  opacity: 0.8;
+  border-radius: 50%;
+  transform: translate(0, 0);
+  transition: transform 0.1s;
+  transition-timing-function: ease-out;
+  z-index: 999;
+}
+
 .florita_content {
   width: 100%;
   height: 100vh;
@@ -17,6 +30,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  top: 0;
 }
 .florita_content .backBtn {
   position: absolute;
@@ -35,7 +49,6 @@ body {
   position: absolute;
   top: 24px;
   right: 10px;
-  transition: all 0.5s;
   width: 30px;
   height: 3px;
   background-color: #59331D;
@@ -47,13 +60,14 @@ body {
   transform: rotate(-45deg);
 }
 .florita_content .backBtn .crossBtn:hover::after {
-  transform: scale(1.2) rotate(135deg);
+  transform: scale(1.3) rotate(45deg);
 }
 .florita_content .backBtn .crossBtn:hover::before {
-  transform: scale(1.2) rotate(-135deg);
+  transform: scale(1.3) rotate(-45deg);
 }
 .florita_content .florita_image {
   width: 50%;
+  height: 60vh;
 }
 .florita_content .florita_image figure {
   width: 100%;
@@ -63,6 +77,8 @@ body {
 }
 .florita_content .florita_infomation {
   width: 25%;
+  height: 70vh;
+  margin-top: 120px;
   display: flex;
   flex-flow: column;
 }
@@ -127,7 +143,7 @@ body {
 }
 .florita_content .florita_watches {
   width: 85%;
-  height: 80px;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -141,6 +157,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
 .florita_content .florita_watches .watches_content a p {
   color: #eee;
@@ -152,4 +169,39 @@ body {
 .florita_content .florita_watches .watches_content a p:hover {
   color: #F23827;
   letter-spacing: 0.2rem;
+}
+.florita_content h2 {
+  width: 100%;
+  font-size: 6rem;
+  text-align: center;
+  color: #2c2c2c;
+  margin-top: 120px;
+}
+.florita_content .logo_infomation {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.florita_content .logo_infomation .logo_image {
+  width: 30%;
+  margin: 0 auto;
+}
+.florita_content .logo_infomation .logo_image figure {
+  width: 500px;
+}
+.florita_content .logo_infomation .logo_image figure img {
+  width: 100%;
+  margin: 0 auto;
+}
+.florita_content .logo_infomation .logo_text {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+}
+.florita_content .logo_infomation .logo_text p, .florita_content .logo_infomation .logo_text h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  color: #2c2c2c;
 }

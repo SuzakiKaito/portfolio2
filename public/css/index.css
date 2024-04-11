@@ -62,7 +62,7 @@ header .nav {
   height: 80px;
   background: #59331D;
   border-radius: 20px;
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 100px;
   display: flex;
@@ -150,6 +150,14 @@ header .header_images .gear_image img {
     transform: rotate(0);
   }
 }
+@keyframes rotation3 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 main {
   width: 100%;
 }
@@ -174,7 +182,7 @@ main {
   justify-content: center;
 }
 .myself .profile .profile_name {
-  width: 35%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -192,34 +200,61 @@ main {
 }
 .myself .profile .profile_name h2 {
   @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Inika&family=Lalezar&family=Merriweather:wght@300&display=swap");
-  font-size: 35px;
+  font-size: 30px;
   color: #2c2c2c;
 }
 .myself .profile .profile_name h2 span {
-  font-size: 18px;
+  font-size: 15px;
 }
-.myself .profile .profile_text {
-  width: 65%;
+.myself .profile .profile_detail {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+}
+.myself .profile .profile_detail .profile_text {
+  width: 80%;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
 }
-.myself .profile .profile_text p {
+.myself .profile .profile_detail .profile_text p {
   font-size: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   color: #2c2c2c;
 }
-.myself .profile .profile_text button {
-  margin-top: 30px;
-  width: 200px;
-  height: 60px;
-  color: #F7ECEC;
-  font-size: 24px;
-  background: #59331D;
-  transition: ease-in-out 0.3s;
+.myself .profile .profile_detail .profile_skill {
+  width: 65%;
+  height: 500px;
+  margin-top: 25px;
 }
-.myself .profile .profile_text button:hover {
-  color: #F23827;
-  letter-spacing: 0.6px;
+.myself .profile .profile_detail .profile_skill h2 {
+  width: 100%;
+  font-size: 40px;
+  color: #2c2c2c;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex .skill_content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value figure {
+  width: 80px;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value figure img {
+  width: 100%;
+  height: 100%;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .icon {
+  width: 60px;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .icon img {
+  width: 100%;
 }
 
 .future {
@@ -255,6 +290,9 @@ main {
   left: -280px;
   z-index: -1;
 }
+.future .gear_big img {
+  animation: 10s linear infinite rotation3;
+}
 .future .gear_normal {
   width: 400px;
   height: 400px;
@@ -263,6 +301,9 @@ main {
   position: absolute;
   bottom: -50px;
   right: 50px;
+}
+.future .gear_normal img {
+  animation: 12s linear infinite rotation3;
 }
 
 .work {
@@ -278,6 +319,7 @@ main {
 }
 .work .florita_content {
   width: 100%;
+  height: 700px;
   margin-top: 60px;
   display: flex;
   justify-content: center;
@@ -378,7 +420,8 @@ main {
 }
 .work .seek_content {
   width: 100%;
-  margin-top: 200px;
+  height: 800px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,34 +520,40 @@ main {
   color: #F23827;
 }
 
-.skill {
+.contact {
   width: 100%;
-  height: 500px;
+  height: 300px;
+  margin-top: 250px;
 }
-.skill h2 {
+.contact h2 {
   width: 100%;
   font-size: 40px;
   text-align: center;
   padding-top: 30px;
   color: #2c2c2c;
 }
-.skill .skill_content {
+.contact .skill_flex {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .skill_flex .skill_content {
+  width: 50%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.skill .skill_content .skill_value figure {
-  width: 200px;
+.contact .skill_flex .skill_content .skill_value figure {
+  width: 100px;
 }
-.skill .skill_content .skill_value figure img {
+.contact .skill_flex .skill_content .skill_value figure img {
   width: 100%;
   height: 100%;
 }
-.skill .skill_content .skill_value .icon {
-  width: 150px;
+.contact .skill_flex .skill_content .skill_value .icon {
+  width: 80px;
 }
-.skill .skill_content .skill_value .icon img {
+.contact .skill_flex .skill_content .skill_value .icon img {
   width: 100%;
 }
