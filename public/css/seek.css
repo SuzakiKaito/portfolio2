@@ -66,6 +66,33 @@ body {
 .seek_content .backBtn .crossBtn:hover::before {
   transform: scale(1.3) rotate(-45deg);
 }
+.seek_content .underTriangle {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  animation: fluffy infinite 1.5s;
+}
+.seek_content .underTriangle figure {
+  width: 100%;
+  height: 100%;
+}
+.seek_content .underTriangle figure .icon {
+  width: 100%;
+  height: 100%;
+}
+@keyframes fluffy {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .seek_content .seek_image {
   width: 50%;
   height: 60vh;

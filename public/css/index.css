@@ -21,11 +21,30 @@ body {
   z-index: 999;
 }
 
-.mouse-hover {
-  top: -30px;
-  transition: 0.2s;
-  width: 30px;
-  height: 30px;
+.meter_content {
+  position: relative;
+  width: 100%;
+}
+.meter_content .meter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 8px;
+  z-index: 990;
+  background-color: #ddd;
+  animation: meter linear;
+  animation-timeline: scroll();
+}
+@keyframes meter {
+  0% {
+    background-color: #F23827;
+    width: 0;
+  }
+  100% {
+    background-color: #F23827;
+    width: 100%;
+  }
 }
 
 header {
@@ -255,6 +274,9 @@ main {
 }
 .myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .icon img {
   width: 100%;
+}
+.myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .iconMargin {
+  margin-left: 20px;
 }
 
 .future {
