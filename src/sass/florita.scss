@@ -248,7 +248,7 @@ body{
           flex-wrap: wrap;
           flex-flow: column;
           .work_text{
-            margin: 15px;
+            margin: 10px 15px;
             // width: 40%;
             h2{
               font-size: 24px;
@@ -257,6 +257,9 @@ body{
             }
             p{
               font-size: 18px;
+              span{
+                font-weight: bold;
+              }
             }
           }
         }

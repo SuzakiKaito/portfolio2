@@ -90,21 +90,22 @@ header .nav {
   flex-flow: column;
   z-index: 3;
 }
-header .nav ul {
+header .nav .li_element {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header .nav ul li {
+header .nav .li_element li {
   background: #F2D399;
   border-radius: 20px;
   width: 100px;
   height: 60px;
   list-style: none;
+  transition: ease-in-out 0.3s;
 }
-header .nav ul li a {
+header .nav .li_element li a {
   width: 100%;
   height: 100%;
   display: block;
@@ -117,7 +118,7 @@ header .nav ul li a {
   transition: ease-in-out 0.3s;
   letter-spacing: 0.5px;
 }
-header .nav ul li :hover {
+header .nav .li_element li :hover {
   color: #F23827;
   letter-spacing: 1px;
 }

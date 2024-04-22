@@ -68,7 +68,7 @@ body {
 }
 .seek_content .underTriangle {
   position: absolute;
-  bottom: 50px;
+  bottom: 80px;
   right: 50px;
   width: 70px;
   height: 70px;
@@ -255,4 +255,8 @@ body {
 }
 .seek_content .work_infomation .work_content .work_flex .work_thoughts .work_text p {
   font-size: 18px;
+}
+
+span {
+  font-weight: bold;
 }

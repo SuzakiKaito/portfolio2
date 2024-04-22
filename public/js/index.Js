@@ -1,6 +1,12 @@
 const mouseStalker = document.querySelector(".mouse-stalker") 
 const scrollContent = document.querySelector(".scroll")
-console.log(mouseStalker,scrollContent);
+const liElements = document.querySelectorAll('.li_element li');
+const topContent = document.querySelector(".top_content")
+const myselfContent = document.querySelector(".myself_content")
+const workContent = document.querySelector(".work_content")
+const contactContent = document.querySelector(".contact_content")
+console.log(liElements);
+// console.log(mouseStalker,scrollContent);
 
 document.addEventListener('mousemove',function(event){
   mouseStalker.style.transform = 'translate('+ event.clientX+'px,'+ event.clientY +'px)'
@@ -10,6 +16,35 @@ scrollContent.addEventListener("mouseover",()=>{
   scrollContent.classList.add= "mouse-hover";
   console.log("hover");
 })
+// liElements.forEach(li =>{
+//   li.addEventListener(click,() =>{
+//     console.log(li);
+//     const clickedLi = li;
+
+//     window.scrollTo(0, window.scrollY + 500);
+//   })
+// })
+topContent.addEventListener("click",top_event);
+function top_event() {
+  window.scroll({top:0,behavior:'smooth'})
+}
+myselfContent.addEventListener("click",myself_event);
+function myself_event() {
+  window.scroll({top:1000,behavior:'smooth'})
+}
+workContent.addEventListener("click",work_event);
+function work_event() {
+  window.scroll({top:2300,behavior:'smooth'})
+}
+contactContent.addEventListener("click",contact_event);
+function contact_event() {
+  window.scroll({top:3400,behavior:'smooth'})
+}
+
+
+
+
+
 // const slider = document.querySelector(".work_slider");
 // // const slides = document.querySelectorAll('.work_slider img');
 // // const slideWidth = slides[0].clientWidth;
