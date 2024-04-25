@@ -58,7 +58,7 @@ header .trapezoid {
   border-top: 998px solid #A65F37;
   border-left: 0 solid transparent;
   border-right: 150px solid transparent;
-  width: 450px;
+  width: 500px;
   position: absolute;
 }
 header .svgTitle {
@@ -66,6 +66,8 @@ header .svgTitle {
   height: 100px;
   position: absolute;
   top: 350px;
+  left: 20px;
+  margin: 0 auto;
   z-index: 3;
 }
 header .svgTitle figure {
@@ -78,7 +80,7 @@ header .svgTitle figure img {
 }
 header .nav {
   width: 480px;
-  height: 80px;
+  height: 70px;
   background: #59331D;
   border-radius: 20px;
   position: fixed;
@@ -101,7 +103,7 @@ header .nav .li_element li {
   background: #F2D399;
   border-radius: 20px;
   width: 100px;
-  height: 60px;
+  height: 50px;
   list-style: none;
   transition: ease-in-out 0.3s;
 }
@@ -112,7 +114,7 @@ header .nav .li_element li a {
   color: #2c2c2c;
   text-decoration: none;
   text-align: center;
-  line-height: 60px;
+  line-height: 50px;
   font-size: 1.8rem;
   font-weight: bold;
   transition: ease-in-out 0.3s;
@@ -238,14 +240,14 @@ main {
   padding-top: 40px;
 }
 .myself .profile .profile_detail .profile_text p {
-  font-size: 20px;
+  font-size: 1.2vw;
   padding-bottom: 15px;
   color: #2c2c2c;
 }
 .myself .profile .profile_detail .profile_skill {
   width: 65%;
   height: 500px;
-  margin-top: 25px;
+  margin: 25px 0 0 35px;
 }
 .myself .profile .profile_detail .profile_skill h2 {
   width: 100%;
@@ -573,4 +575,423 @@ main {
 }
 .contact .contact_flex .contact_iconImage figure img {
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 100vh;
+  }
+  header .trapezoid {
+    width: 300px;
+  }
+  header .svgTitle figure img {
+    width: 90vw;
+  }
+  header .nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+  }
+  header .nav .li_element {
+    width: 100%;
+    height: 100%;
+  }
+  header .nav .li_element li {
+    background: #59331D;
+    border-radius: 0;
+    width: 24%;
+    height: 40px;
+    list-style: none;
+    transition: ease-in-out 0.3s;
+  }
+  header .nav .li_element li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #F2D399;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  header .scroll {
+    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 50px;
+    height: 80px;
+    background: none;
+    border: 1px solid #59331D;
+    border-radius: 50px;
+  }
+  header .scroll::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+    background: #59331D;
+  }
+  header .scroll h2 {
+    display: none;
+  }
+  header .header_images {
+    top: 100px;
+    right: -200px;
+  }
+  header .header_images .gear_normal img {
+    width: 70%;
+  }
+  header .header_images .gear_image {
+    position: absolute;
+    top: 220px;
+  }
+  header .header_images .gear_image img {
+    width: 100%;
+  }
+  main .myself {
+    height: 300px;
+  }
+  main .myself h2 {
+    padding-top: 10px;
+    font-size: 6vw;
+  }
+  main .myself .profile {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+  }
+  main .myself .profile .profile_name {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column;
+  }
+  main .myself .profile .profile_name figure {
+    width: 100px;
+    height: 100px;
+  }
+  main .myself .profile .profile_name figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  main .myself .profile .profile_name h2 span {
+    font-size: 2vw;
+  }
+  main .myself .profile .profile_detail {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+  }
+  main .myself .profile .profile_detail .profile_text {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+  main .myself .profile .profile_detail .profile_text p {
+    font-size: 2vw;
+    padding-bottom: 10px;
+    color: #2c2c2c;
+  }
+  main .myself .profile .profile_detail .profile_skill {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 0 35px;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex .skill_content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value figure {
+    width: 40px;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value figure img {
+    width: 100%;
+    height: 100%;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .icon {
+    width: 30px;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .icon img {
+    width: 100%;
+  }
+  main .myself .profile .profile_detail .profile_skill .skill_flex .skill_content .skill_value .iconMargin {
+    margin-left: 10px;
+  }
+  main .future {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  main .future h2 {
+    width: 100%;
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 10px;
+    color: #2c2c2c;
+  }
+  main .future .future_text {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .future .future_text h1 {
+    font-size: 4vw;
+    text-align: center;
+    color: #2c2c2c;
+  }
+  main .future .future_text h1 span {
+    color: #F23827;
+  }
+  main .future .gear_big {
+    position: absolute;
+    top: -300px;
+    left: -320px;
+    z-index: -1;
+  }
+  main .future .gear_big img {
+    animation: 10s linear infinite rotation3;
+  }
+  main .future .gear_normal {
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    transform: scale(100px);
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+  }
+  main .future .gear_normal img {
+    width: 100%;
+    height: 100%;
+    animation: 12s linear infinite rotation3;
+  }
+  main .work {
+    height: 1000px;
+  }
+  main .work h2 {
+    font-size: 6vw;
+    padding-top: 0;
+  }
+  main .work .florita_content {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .work .florita_content .florita_image {
+    width: 30%;
+    transform: rotate(-10deg);
+    margin-right: 30px;
+  }
+  main .work .florita_content .florita_image figure {
+    width: 100%;
+  }
+  main .work .florita_content .florita_image figure img {
+    width: 100%;
+  }
+  main .work .florita_content .florita_infomation {
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+  }
+  main .work .florita_content .florita_infomation p, main .work .florita_content .florita_infomation h3 {
+    text-align: left;
+  }
+  main .work .florita_content .florita_infomation p {
+    font-size: 3vw;
+  }
+  main .work .florita_content .florita_infomation p span {
+    color: #F23827;
+  }
+  main .work .florita_content .florita_infomation h3 {
+    font-size: 8vw;
+  }
+  main .work .florita_content .florita_infomation .florita_infomation_flex {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+  main .work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box {
+    width: 160px;
+    height: 70px;
+    margin: 8px 5px 0;
+    background: #59331D;
+  }
+  main .work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box p, main .work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box h4 {
+    color: #eee;
+    text-align: center;
+    line-height: 30px;
+  }
+  main .work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box p {
+    font-size: 10px;
+  }
+  main .work .florita_content .florita_infomation .florita_infomation_flex .florita_infomation_box h4 {
+    font-size: 18px;
+  }
+  main .work .florita_content .florita_infomation .florita_infomation_ture {
+    display: none;
+  }
+  main .work .florita_content .florita_infomation .florita_btn {
+    width: 160px;
+    height: 50px;
+    font-size: 1.6rem;
+    margin: 20px 0 0 auto;
+    transition: ease-in-out 0.3s;
+  }
+  main .work .florita_content .florita_infomation .florita_btn a {
+    color: #59331D;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+  }
+  main .work .florita_content .florita_infomation .florita_btn a:hover {
+    letter-spacing: 0.8px;
+    color: #F23827;
+  }
+  main .work .seek_content {
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .work .seek_content .seek_image {
+    width: 25%;
+    transform: rotate(-10deg) scale(1.2);
+    margin-right: 30px;
+  }
+  main .work .seek_content .seek_image figure {
+    width: 100%;
+  }
+  main .work .seek_content .seek_image figure img {
+    width: 100%;
+  }
+  main .work .seek_content .seek_infomation {
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+  }
+  main .work .seek_content .seek_infomation p, main .work .seek_content .seek_infomation h3 {
+    text-align: left;
+  }
+  main .work .seek_content .seek_infomation p {
+    font-size: 3vw;
+  }
+  main .work .seek_content .seek_infomation p span {
+    color: #F23827;
+  }
+  main .work .seek_content .seek_infomation h3 {
+    font-size: 8vw;
+  }
+  main .work .seek_content .seek_infomation .seek_infomation_flex {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+  main .work .seek_content .seek_infomation .seek_infomation_flex .seek_infomation_box {
+    width: 160px;
+    height: 80px;
+    margin: 10px 5px 0;
+    background: #59331D;
+  }
+  main .work .seek_content .seek_infomation .seek_infomation_flex .seek_infomation_box p, main .work .seek_content .seek_infomation .seek_infomation_flex .seek_infomation_box h4 {
+    color: #eee;
+    text-align: center;
+    line-height: 35px;
+  }
+  main .work .seek_content .seek_infomation .seek_infomation_flex .seek_infomation_box p {
+    font-size: 10px;
+  }
+  main .work .seek_content .seek_infomation .seek_infomation_flex .seek_infomation_box h4 {
+    font-size: 18px;
+  }
+  main .work .seek_content .seek_infomation .seek_infomation_ture {
+    display: none;
+  }
+  main .work .seek_content .seek_infomation .seek_btn {
+    width: 160px;
+    height: 50px;
+    -webkit-text-decoration: double;
+            text-decoration: double;
+    border-bottom: #59331D 1px solid;
+    font-size: 1.6rem;
+    margin: 10px 0 0 auto;
+    transition: ease-in-out 0.3s;
+  }
+  main .work .seek_content .seek_infomation .seek_btn a {
+    color: #59331D;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+  }
+  main .work .seek_content .seek_infomation .seek_btn a:hover {
+    letter-spacing: 0.8px;
+    color: #F23827;
+  }
+  main .contact {
+    width: 100%;
+    height: 200px;
+    margin-top: 250px;
+  }
+  main .contact h2 {
+    width: 100%;
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 30px;
+    color: #2c2c2c;
+  }
+  main .contact .contact_flex {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contact .contact_flex .contact_iconImage {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  main .contact .contact_flex .contact_iconImage figure {
+    width: 40px;
+  }
+  main .contact .contact_flex .contact_iconImage figure img {
+    width: 100%;
+  }
+}
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
 }
