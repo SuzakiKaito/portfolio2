@@ -160,7 +160,7 @@ body {
   width: 380px;
   height: 60px;
   background: #59331D;
-  margin: 0 5px 20px auto;
+  margin: 50px 5px 20px auto;
 }
 .florita_content .florita_infomation .florita_infomation_ture .florita_ture_box h4 {
   color: #eee;
@@ -237,9 +237,10 @@ body {
   font-size: 20px;
   margin: 0;
   text-align: left;
+  color: #F23827;
 }
 .florita_content .work_infomation .work_content .work_flex .work_overview .work_text p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .florita_content .work_infomation .work_content .work_flex .work_overview .work_text p span {
   font-weight: bold;
@@ -254,7 +255,8 @@ body {
   font-size: 20px;
   margin: 0;
   text-align: left;
+  color: #F23827;
 }
 .florita_content .work_infomation .work_content .work_flex .work_thoughts .work_text p {
-  font-size: 14px;
+  font-size: 16px;
 }

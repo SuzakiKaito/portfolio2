@@ -176,7 +176,7 @@ body{
         height: 60px;
         background: $mainColor;
         // text-align: right;
-        margin: 0 5px 20px auto;
+        margin: 50px 5px 20px auto;
         h4{
           color: #eee;
           font-size: 1.5rem;
@@ -252,9 +252,10 @@ body{
             margin: 15px;
             // width: 40%;
             h2{
-              font-size: 24px;
+              font-size: 22px;
               margin: 0;
               text-align: left;
+              color: $accentColor;
             }
             p{
               font-size: 18px;
@@ -267,9 +268,11 @@ body{
             margin: 20px 30px;
             // width: 40%;
             h2{
-              font-size: 24px;
+              font-size: 22px;
               margin: 0;
               text-align: left;
+              color: $accentColor;
+
             }
             p{
               font-size: 18px;

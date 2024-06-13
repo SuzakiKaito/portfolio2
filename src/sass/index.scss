@@ -1,24 +1,24 @@
+
+//色
 $bgColor:#F2D399;
 $mainColor:#59331D;
 $textColor:#2c2c2c;
 $baseColor:#A65F37;
 $accentColor:#F23827;
 
-
-
 html{
   font-size: 62.5%;
-}
-body{
-  background:$bgColor;
-  width: 100%;
-  height:auto;
-  
+  }
+  body{
+    background:$bgColor;
+    width: 100%;
+    height:auto;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 }
 .mouse-stalker{
   position: fixed;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background:$accentColor;
   opacity: .8;
   border-radius: 50%;
@@ -27,147 +27,321 @@ body{
   transition-timing-function: ease-out;
   z-index: 999;
 }
-.meter_content{
-  position: relative;
-  width: 100%;
-  // height: 1000px;
-  .meter{
-    position:fixed;
-    // top: 10vh;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 8px;
-    z-index: 990;
-    background-color: #ddd;
-    animation: meter linear;
-    animation-timeline: scroll();
-  }
-  @keyframes meter{
-    0%{background-color: #F23827; width: 0;}
-  100%{background-color: #F23827; width: 100%;}
-  }
-}
+// .meter_content{
+//   position: relative;
+//   width: 100%;
+//   // height: 1000px;
+//   .meter{
+//     position:fixed;
+//     // top: 10vh;
+//     bottom: 0;
+//     left: 0;
+//     width: 0;
+//     height: 8px;
+//     z-index: 990;
+//     background-color: #ddd;
+//     animation: meter linear;
+//     animation-timeline: scroll();
+//   }
+//   @keyframes meter{
+//     0%{background-color: #F23827; width: 0;}
+//   100%{background-color: #F23827; width: 100%;}
+//   }
+// }
 
+
+// header{
+//   background: $bgColor;
+//   width: 100%;
+//   height: 998px;
+//   // background: tomato;
+//   position: relative;
+//   // z-index: -2;
+//   overflow: hidden;
+
+//   .trapezoid {
+// 	border-top: 998px solid $baseColor;
+// 	border-left: 0 solid transparent;
+// 	border-right: 150px solid transparent;
+// 	// height:100vh;
+// 	width: 500px;
+//   position: absolute;
+//   // z-index: -1;
+//   }
+//   .svgTitle{
+//     width: 100%;
+//     height: 100px;
+//     position: absolute;
+//     top:350px;
+//     left: 20px;
+//     margin: 0 auto;
+//     z-index: 3;
+//     figure{
+//       width: 100%;
+//       height: 100px;
+//       img{
+//         width: 100%;
+//         height: 120%;
+//       }
+//     }
+//   }
+//   .nav{
+//     width: 480px;
+//     height: 70px;
+//     background:$mainColor;
+//     border-radius: 20px;
+//     position: fixed;
+//     top: 50px;
+//     left: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-flow: column;
+//     z-index: 3;
+//     .li_element{
+//       width: 100%;
+//       height: 100%;
+//       display: flex;
+//       justify-content: space-around;
+//       align-items: center;
+//       li{
+//         background: $bgColor;
+//         border-radius: 20px;
+//         width: 100px;
+//         height: 50px;
+//         list-style: none;
+//         transition: ease-in-out .3s;
+//         a{
+//           width: 100%;
+//           height: 100%;
+//           display: block;
+//           color:$textColor ;
+//           text-decoration: none;
+//           text-align: center;
+//           line-height: 50px;
+//           font-size: 1.8rem;
+//           font-weight: bold;
+//           transition: ease-in-out .3s;
+//           letter-spacing: .5px;
+//           // @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inika&family=Lalezar&family=Merriweather:wght@300&display=swap');
+//         }
+//         :hover{
+//           color: $accentColor;
+//           letter-spacing: 1px;
+//         }
+//       }
+//     }
+//   }
+//   .scroll{
+//     width: 260px;
+//     height: 80px;
+//     background: $mainColor;
+//     position: absolute;
+//     top: 650px;
+//     left: 250px;
+//     h2{
+//       color: #fefefe;
+//       font-size: 24px;
+//       text-align: center;
+//       line-height: 80px;
+//     }
+//   }
+//   .header_images{
+//     position: relative;
+//     position: absolute;
+//     // overflow: hidden;
+//     top: 20px;
+//     right: -70px;
+//     .gear_normal{
+//       img{
+//         animation:3s linear infinite rotation1;
+//       }
+//     }
+//     .gear_image{
+//       position: absolute;
+//       top: 300px;
+//       right: -10px;
+//       img{
+//         animation:3s linear infinite rotation2;
+//       }
+//     }
+//   }
+// }
 
 header{
-  background: $bgColor;
   width: 100%;
-  height: 998px;
+  height: 100vh;
   // background: tomato;
-  position: relative;
-  // z-index: -2;
   overflow: hidden;
-
-  .trapezoid {
-	border-top: 998px solid $baseColor;
-	border-left: 0 solid transparent;
-	border-right: 150px solid transparent;
-	// height:100vh;
-	width: 500px;
-  position: absolute;
-  // z-index: -1;
-  }
-  .svgTitle{
+  position: relative;
+  .trapezoid{
     width: 100%;
-    height: 100px;
-    position: absolute;
-    top:350px;
-    left: 20px;
-    margin: 0 auto;
-    z-index: 3;
-    figure{
-      width: 100%;
-      height: 100px;
-      img{
-        width: 100%;
-        height: 120%;
-      }
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    height: 220px;
+    background-color:$baseColor;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+    img{
+      position: absolute;
+      left: 2%;
+      bottom:6%;
+      z-index: 900;
+      transform: rotate(-2deg);
+      max-width:40% ;
+    }
+    .rotate-image{
+      position: absolute;
+      left:90%;
+      bottom: 20%;
+      animation: rotation2 12s linear infinite;
     }
   }
-  .nav{
-    width: 480px;
-    height: 70px;
-    background:$mainColor;
-    border-radius: 20px;
-    position: fixed;
-    top: 50px;
-    left: 100px;
+  .greeting{
+    width: 800px;
+    height: 533px;
+    position: absolute;
+    right: 380px;
+    bottom: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    z-index: 3;
-    .li_element{
+    justify-content: space-between;
+    .animation {
+      display: flex;
+      align-items: center;
+      height: 500px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .text_animation {
+        color: #333;
+        font-size: 56px;
+        font-weight: bold;
+        line-height: 1.3;
+        position: relative;
+        z-index: 1;
+        .slide_anime {
+          display: inline-block;
+          position: relative;
+          &::before,&::after {
+            content: "";
+            display: block;
+            background-color: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+          }
+          &::before{
+            background-color: #333;
+          }
+          &::after{
+            background-color: #888;
+          }
+          &.fade_in {
+            &::before {
+              animation: anima_bg 1.6s ease-out 1 forwards;
+            }
+            &::after {
+              animation: anima_bg2 .8s ease-out 1 forwards;
+            }
+            h2 {
+              animation: anima_fadeIn 0.3s ease-out 1.4s 1 forwards;
+            }
+          }
+          h2 {
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            width: 500px;
+            font-size: 40px;
+            font-family: "PT Serif", serif;
+            pointer-events: none;
+            line-height: 40px;
+            span{
+              color: $accentColor;
+              font-size: 150px;
+              line-height: 150px;
+            }
+          }
+        }
+      }
+    }
+      .main_visual{
+        width: 300px;
+        img{
+          width: 100%;
+          // animation: fadeIn 2s;
+          animation: fadeIn linear both;
+          animation-timeline: auto();
+          animation-range: entry 25% cover 
+            // animation-delay:0.4s ;
+        }   
+    }
+  }
+  .gear_normal{
+    position: absolute;
+    bottom: 20px;
+    left: -80px;
+    animation: rotation1 2s linear infinite;
+  }
+  .gear_big{
+    position: absolute;
+    bottom: 260px;
+    left: -20px;
+    animation: rotation2 2s linear infinite;
+  }
+  nav{
+    position: fixed;
+    bottom:10px;
+    right: 30px;
+    width: 400px;
+    height: 40px;
+    background:$baseColor;
+    ul{
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: space-around;
-      align-items: center;
       li{
-        background: $bgColor;
-        border-radius: 20px;
-        width: 100px;
-        height: 50px;
+        width: 90px;
         list-style: none;
-        transition: ease-in-out .3s;
+        font-size: 15px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
         a{
           width: 100%;
           height: 100%;
           display: block;
-          color:$textColor ;
+          font-family: "PT Serif", serif;
+          color: $bgColor;
           text-decoration: none;
-          text-align: center;
-          line-height: 50px;
-          font-size: 1.8rem;
-          font-weight: bold;
-          transition: ease-in-out .3s;
-          letter-spacing: .5px;
-          // @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inika&family=Lalezar&family=Merriweather:wght@300&display=swap');
-
-        }
-        :hover{
-          color: $accentColor;
-          letter-spacing: 1px;
         }
       }
     }
   }
-  .scroll{
-    width: 260px;
-    height: 80px;
-    background: $mainColor;
+  #scroll_down{
     position: absolute;
-    top: 650px;
-    left: 250px;
-    h2{
-      color: #fefefe;
-      font-size: 24px;
-      text-align: center;
-      line-height: 80px;
-    }
-  }
-  .header_images{
-    position: relative;
-    position: absolute;
-    // overflow: hidden;
-    top: 20px;
-    right: -70px;
-    .gear_normal{
-      img{
-        animation:3s linear infinite rotation1;
-      }
-    }
-    .gear_image{
-      position: absolute;
-      top: 300px;
-      right: -10px;
-      img{
-        animation:3s linear infinite rotation2;
-      }
+    right: 30px;
+    bottom: 100px;
+    width: 200px;
+    animation:rotate_scroll 10s linear infinite;
+    transition: ease-in-out;
+    .arrow{
+      display: none;
     }
   }
 }
+
 @keyframes rotation1{
   0%{ transform:rotate(0);}
   100%{ transform:rotate(360deg); }
@@ -176,9 +350,67 @@ header{
   0%{ transform:rotate(360deg);}
   100%{ transform:rotate(0); }
 }
-@keyframes rotation3{
-  0%{ transform:rotate(360deg);}
-  100%{ transform:rotate(0); }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+@keyframes anima_fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anima_bg {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  40% {
+    left: 0;
+    right: 0;
+  }
+  60% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+@keyframes anima_bg2 {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  40% {
+    left: 0;
+    right: 0;
+  }
+  60% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+@keyframes rotate_scroll{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 main{
@@ -186,15 +418,17 @@ main{
 }
 .myself{
   width: 100%;
-  height: 600px;
+  height: 800px;
   background: #D2B7A0;
   // margin-top: 150px;
   h2{
     width: 100%;
     font-size: 40px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 120px;
     color: $textColor;
+    font-family: "PT Serif", serif;
+
   }
   .profile{
     width: 90%;
@@ -222,6 +456,7 @@ main{
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inika&family=Lalezar&family=Merriweather:wght@300&display=swap');
         font-size: 30px;
         color: $textColor;
+        padding-top: 20px;
         span{
           font-size: 15px;
         }
@@ -299,8 +534,9 @@ main{
     width: 100%;
     font-size: 40px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     color: $textColor;
+    font-family: "PT Serif", serif;
   }
   .future_text{
     width: 100%;
@@ -308,10 +544,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    h1{
+    flex-flow: column;
+    overflow: hidden;
+    position: relative;
+    .text{
       font-size: 48px;
       text-align: center;
       color: $textColor;
+      padding-bottom: 50px;
       span{
         color: #F23827;
       }
@@ -320,25 +560,25 @@ main{
   .gear_big{
     position: absolute;
     top: -150px;
-    left: -280px;
+    left: -100px;
     z-index: -1;
       img{
-        animation:10s linear infinite rotation3;
+        animation:10s linear infinite rotation1;
       }
-  }
-  .gear_normal{
-    width: 400px;
-    height: 400px;
-    z-index: -1;
-    // overflow: hidden;
-    transform: scale(100px);
-    position: absolute;
-    bottom: 10px;
-    right: -120px;
-    img{
-      animation:12s linear infinite rotation3;
     }
-  }
+    .gear_normal{
+      width: 400px;
+      height: 400px;
+      z-index: -1;
+      // overflow: hidden;
+      transform: scale(100px);
+      position: absolute;
+      bottom: -10px;
+      right: -200px;
+      img{
+        animation:12s linear infinite rotation2;
+      }
+    }
 }
 .work{
   width: 100%;
@@ -348,7 +588,10 @@ main{
     font-size: 40px;
     text-align: center;
     padding-top: 30px;
+    font-family: "PT Serif", serif;
     color: $textColor;
+
+
   }
   .florita_content{
     width: 100%;
@@ -581,7 +824,9 @@ main{
     font-size: 40px;
     text-align: center;
     padding-top: 30px;
+    font-family: "PT Serif", serif;
     color: $textColor;
+
   }
   .contact_flex{
     width: 100%;
